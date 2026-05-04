@@ -386,7 +386,7 @@ Organizer creates event
    ```bash
    cd /Applications/XAMPP/xamppfiles/htdocs       # macOS
    # or  C:\xampp\htdocs                          # Windows
-   git clone https://github.com/<your-org>/GoGreen-APU.git
+   git clone https://github.com/AaronKhoolb/GoGreen-APU.git
    ```
 
 2. **Start Apache and MySQL** from the XAMPP control panel.
