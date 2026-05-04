@@ -1,0 +1,206 @@
+/*
+    Author: Khoo Lay Bin
+    Date: 2026-1-6
+    Description: account page information
+*/
+
+.account-content {
+    padding: 16px;
+}
+
+
+.account-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.account-tp {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.account-avatar-wrapper {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.account-avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.account-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+
+.account-manage-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 13px;
+    color: #22c55e;
+    text-decoration: none;
+    border: 1px solid rgba(34, 197, 94, 0.4);
+    transition: all 0.2s ease;
+}
+
+.account-manage-btn img {
+    width: 14px;
+    height: 14px;
+    filter: invert(66%) sepia(61%) saturate(545%) hue-rotate(96deg) brightness(88%) contrast(85%);
+}
+
+.account-manage-btn:hover {
+    background: rgba(34, 197, 94, 0.1);
+}
+
+
+
+.account-menu {
+    padding: 12px 0;
+}
+
+.account-menu-link,
+.account-logout-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.account-menu-link:hover,
+.account-logout-btn:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+}
+
+.account-menu-link img,
+.account-logout-btn img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(0.7);
+}
+
+.account-menu-link:hover img,
+.account-logout-btn:hover img {
+    filter: brightness(0) invert(1);
+}
+
+
+
+.account-bottom {
+    padding-top: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+
+.account-modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1001;
+    display: none;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 70px 20px 20px;
+}
+
+.account-modal-overlay.show {
+    display: flex;
+}
+
+.account-modal {
+    position: relative;
+    width: 280px;
+    max-height: 80vh;
+    overflow-y: auto;
+    border-radius: 16px;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
+
+
+
+.account-modal::-webkit-scrollbar {
+    width: 6px;
+}
+
+.account-modal::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.account-modal::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+
+
+
+.account-modal-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.account-modal-close img {
+    width: 18px;
+    height: 18px;
+    filter: brightness(0) invert(1);
+    opacity: 0.5;
+    transition: opacity 0.2s ease;
+}
+
+.account-modal-close:hover img {
+    opacity: 1;
+}
+
+
+
+.mobile-nav-btn.account-with-avatar img.mobile-account-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+
+
+@media (max-width: 699px) {
+    .account-modal-overlay {
+        display: none !important;
+    }
+}
+
+@media (min-width: 700px) {
+    .account-modal .account-content {
+        padding: 40px 16px 16px;
+    }
+}

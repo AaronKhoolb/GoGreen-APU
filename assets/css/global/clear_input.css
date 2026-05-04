@@ -1,0 +1,35 @@
+/*
+    Author: Khoo Lay Bin
+    Date: 2026-1-8
+    Description: Create a global clear button css for all txt box, text area, search bar, .........
+*/
+
+
+.clear-btn {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin-right: 4px;
+    position: relative;
+    z-index: 1;
+}
+
+.clear-btn img {
+    width: 16px;
+    height: 16px;
+    opacity: 0.5;
+    transition: opacity 0.2s ease;
+}
+
+.clear-btn:hover img {
+    opacity: 1;
+}
+
+
+
+
+.has-text .clear-btn {
+    display: flex;
+    align-items: center;
+}

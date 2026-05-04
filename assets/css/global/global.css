@@ -1,0 +1,64 @@
+/*
+    Author: Khoo Lay Bin
+    Date: 2025-11-5
+    Description: a global css that fix the font, size, color, ... for all pages (included in head.php)
+*/
+
+
+:root {
+    --green-primary: #4ADE80;
+    --green-secondary: #22c55e;
+}
+
+
+* {
+    font-family: "Inter";
+    text-rendering: optimizeLegibility;
+    font-optical-sizing: auto;
+    letter-spacing: 0.0018em;
+}
+
+html {
+    user-select: none;
+}
+
+img {
+    width: 100%;
+    -webkit-user-drag: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+body {
+    height: 100%;
+    background-color: #000000;
+    background-image: url('../../images/bg/starry_black_background.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+
+h1,
+h2,
+h3 {
+    color: var(--green-primary);
+}
+
+
+input,
+textarea,
+select {
+    color: white;
+}
+
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+}

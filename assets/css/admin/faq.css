@@ -1,0 +1,247 @@
+/* 
+    Author: Chong Ray Han
+    Date: 2026-1-9
+    Description: Faq page stylesheet
+*/
+.admin-faq-content {
+    display: block;
+    max-width: 1000px;
+    margin: 0;
+    padding: 0 20px 40px;
+}
+
+.admin-faq-content .faq-main {
+    width: 100%;
+}
+
+.admin-faq-content .faq-question {
+    cursor: default;
+}
+
+
+.faq-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 24px;
+    gap: 15px;
+}
+
+
+.faq-question h3 {
+    flex: 1;
+    margin: 0;
+    cursor: pointer;
+}
+
+
+.faq-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    z-index: 2;
+}
+
+
+.action-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+}
+
+.action-btn img {
+    width: 18px;
+    height: 18px;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.action-btn span {
+    opacity: 0.8;
+}
+
+.edit-btn {
+    background: linear-gradient(180deg, rgba(34, 197, 94, 0.15), rgba(22, 163, 74, 0.1));
+    backdrop-filter: blur(10px) saturate(180%);
+    border: 1px solid rgba(34, 197, 94, 0.3);
+    box-shadow: 0 4px 15px rgba(34, 197, 94, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    color: #4ade80;
+}
+
+.edit-btn img {
+    filter: invert(88%) sepia(48%) saturate(2159%) hue-rotate(66deg) brightness(98%) contrast(89%);
+}
+
+.edit-btn:hover {
+    background: linear-gradient(180deg, rgba(34, 197, 94, 0.2), rgba(22, 163, 74, 0.15));
+}
+
+.edit-btn:hover img,
+.edit-btn:hover span {
+    opacity: 1;
+}
+
+.delete-btn {
+    background: linear-gradient(180deg, rgba(239, 68, 68, 0.15), rgba(220, 38, 38, 0.1));
+    backdrop-filter: blur(10px) saturate(180%);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    box-shadow: 0 4px 15px rgba(239, 68, 68, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    color: #f87171;
+}
+
+.delete-btn img {
+    filter: invert(62%) sepia(93%) saturate(1352%) hue-rotate(315deg) brightness(101%) contrast(95%);
+}
+
+.delete-btn:hover {
+    background: linear-gradient(180deg, rgba(239, 68, 68, 0.2), rgba(220, 38, 38, 0.15));
+}
+
+.delete-btn:hover img,
+.delete-btn:hover span {
+    opacity: 1;
+}
+
+.section-title-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.admin-faq-content .section-header {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+}
+
+.admin-faq-content .section-line {
+    width: 100%;
+    height: 1px;
+    flex: none;
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.add-faq-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, rgba(34, 197, 94, 0.15), rgba(22, 163, 74, 0.1));
+    backdrop-filter: blur(10px) saturate(180%);
+    border: 1px solid rgba(34, 197, 94, 0.3);
+    box-shadow: 0 4px 15px rgba(34, 197, 94, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.add-faq-btn img {
+    width: 18px;
+    height: 18px;
+    filter: invert(88%) sepia(48%) saturate(2159%) hue-rotate(66deg) brightness(98%) contrast(89%);
+    opacity: 0.8;
+    transition: all 0.2s ease;
+}
+
+.add-faq-btn:hover {
+    background: linear-gradient(180deg, rgba(34, 197, 94, 0.25), rgba(22, 163, 74, 0.2));
+    transform: scale(1.05);
+}
+
+.add-faq-btn:hover img {
+    opacity: 1;
+}
+
+
+
+.header-actions .btn-discard,
+.header-actions .btn-save {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header-actions .btn-discard img,
+.header-actions .btn-save img {
+    width: 18px;
+    height: 18px;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.header-actions .btn-discard span,
+.header-actions .btn-save span {
+    opacity: 0.8;
+}
+
+.header-actions .btn-discard {
+    background: linear-gradient(180deg, rgba(239, 68, 68, 0.15), rgba(220, 38, 38, 0.1));
+    backdrop-filter: blur(10px) saturate(180%);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    box-shadow: 0 4px 15px rgba(239, 68, 68, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    color: #f87171;
+}
+
+.header-actions .btn-discard img {
+    filter: invert(62%) sepia(93%) saturate(1352%) hue-rotate(315deg) brightness(101%) contrast(95%);
+}
+
+.header-actions .btn-discard:hover {
+    background: linear-gradient(180deg, rgba(239, 68, 68, 0.2), rgba(220, 38, 38, 0.15));
+}
+
+.header-actions .btn-save {
+    background: linear-gradient(180deg, rgba(34, 197, 94, 0.15), rgba(22, 163, 74, 0.1));
+    backdrop-filter: blur(10px) saturate(180%);
+    border: 1px solid rgba(34, 197, 94, 0.3);
+    box-shadow: 0 4px 15px rgba(34, 197, 94, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    color: #4ade80;
+}
+
+.header-actions .btn-save img {
+    filter: invert(88%) sepia(48%) saturate(2159%) hue-rotate(66deg) brightness(98%) contrast(89%);
+}
+
+.header-actions .btn-save:hover {
+    background: linear-gradient(180deg, rgba(34, 197, 94, 0.2), rgba(22, 163, 74, 0.15));
+}
+
+.header-actions .btn-discard:hover img,
+.header-actions .btn-discard:hover span,
+.header-actions .btn-save:hover img,
+.header-actions .btn-save:hover span {
+    opacity: 1;
+}
+
+
+@media (max-width: 600px) {
+    .faq-question {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .faq-actions {
+        width: 100%;
+        margin-top: 10px;
+        justify-content: flex-end;
+    }
+}

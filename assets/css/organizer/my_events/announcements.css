@@ -1,0 +1,340 @@
+/*
+    Author: Chong Ray Han
+    Date: 2026-01-28
+    Description: Announcements page styling for organizer
+*/
+
+.page-content {
+    margin: 24px 70px 20px;
+}
+
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.page-header h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header-actions button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.header-actions button img {
+    width: 18px;
+    height: 18px;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.header-actions button span {
+    opacity: 0.8;
+}
+
+.btn-send {
+    background: linear-gradient(180deg, rgba(34, 197, 94, 0.15), rgba(22, 163, 74, 0.1));
+    backdrop-filter: blur(10px) saturate(180%);
+    border: 1px solid rgba(34, 197, 94, 0.3);
+    box-shadow: 0 4px 15px rgba(34, 197, 94, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    color: #4ade80;
+}
+
+.btn-send img {
+    filter: invert(88%) sepia(48%) saturate(2159%) hue-rotate(66deg) brightness(98%) contrast(89%);
+}
+
+.btn-send:hover {
+    background: linear-gradient(180deg, rgba(34, 197, 94, 0.2), rgba(22, 163, 74, 0.15));
+}
+
+.btn-send:hover img {
+    opacity: 1;
+}
+
+.btn-send:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.form-part {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.form-part-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.form-part-header span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-part-header span img {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+    opacity: 0.8;
+}
+
+.form-part-header h3 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0;
+}
+
+.form-part-content {
+    padding: 20px;
+}
+
+/* Form fields */
+.form-field {
+    margin-bottom: 16px;
+}
+
+.form-field:last-child {
+    margin-bottom: 0;
+}
+
+.form-field label {
+    display: block;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.field-helper {
+    color: #aaa;
+    font-size: 13px;
+    margin-bottom: 10px;
+    margin-top: -4px;
+}
+
+.txt-container {
+    position: relative;
+}
+
+.txt-container input[type="text"],
+.txt-container textarea {
+    width: 100%;
+    padding: 12px 16px;
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 14px;
+    font-family: inherit;
+    transition: background 0.2s;
+}
+
+.txt-container input[type="text"]:focus,
+.txt-container textarea:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.txt-container input[type="text"]::placeholder,
+.txt-container textarea::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.txt-container textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.recipient-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 16px;
+    background: rgba(76, 175, 80, 0.08);
+    border: 1px solid rgba(76, 175, 80, 0.25);
+    border-radius: 10px;
+    margin-bottom: 16px;
+}
+
+.recipient-info img {
+    width: 20px;
+    height: 20px;
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+}
+
+.recipient-info span {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.recipient-count {
+    font-weight: 600;
+    color: #4CAF50;
+}
+
+/* Announcements List */
+.announcements-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.announcement-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 16px 20px;
+    transition: background 0.2s;
+}
+
+.announcement-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.announcement-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.announcement-title {
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.announcement-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.announcement-meta .time {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.announcement-meta img {
+    width: 14px;
+    height: 14px;
+    filter: invert(1);
+    opacity: 0.5;
+}
+
+.announcement-message {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.5;
+}
+
+.announcement-image {
+    margin-top: 12px;
+}
+
+.announcement-image img {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Empty state */
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.empty-state img {
+    width: 60px;
+    height: 60px;
+    filter: invert(1);
+    opacity: 0.3;
+    margin-bottom: 16px;
+}
+
+.empty-state h4 {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 8px;
+}
+
+.empty-state p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* Success/Error message */
+.alert {
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+.alert-success {
+    background: rgba(76, 175, 80, 0.15);
+    border: 1px solid rgba(76, 175, 80, 0.3);
+    color: #81C784;
+}
+
+.alert-error {
+    background: rgba(244, 67, 54, 0.15);
+    border: 1px solid rgba(244, 67, 54, 0.3);
+    color: #E57373;
+}
+
+@media (max-width: 768px) {
+    .page-content {
+        margin: 20px 16px;
+    }
+
+    .page-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .form-part-content {
+        padding: 16px;
+    }
+}

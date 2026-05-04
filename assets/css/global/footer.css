@@ -1,0 +1,341 @@
+/*
+    Author: Chong Ray Han
+    Date: 2026-01-30
+    Description: Footer styles matching the GoGreen@APU design system with glassmorphism effects
+*/
+
+/* ===== Footer Container ===== */
+.site-footer {
+    position: relative;
+    background: rgba(0, 0, 0, 0.6);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    margin-top: 80px;
+    overflow: hidden;
+}
+
+.site-footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 400px;
+    background: radial-gradient(ellipse at center top, rgba(74, 222, 128, 0.08) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 24px 30px;
+    position: relative;
+    z-index: 1;
+}
+
+/* ===== Footer Top Grid ===== */
+.footer-top {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+    gap: 48px;
+    margin-bottom: 48px;
+}
+
+/* ===== Brand Section ===== */
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-logo {
+    width: 180px;
+    height: auto;
+    opacity: 0.95;
+    transition: opacity 0.3s ease;
+}
+
+.footer-logo:hover {
+    opacity: 1;
+}
+
+.footer-tagline {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.55);
+    line-height: 1.7;
+    max-width: 280px;
+    margin: 0;
+}
+
+/* ===== Social Media Links ===== */
+.footer-social {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.social-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background: rgba(74, 222, 128, 0.15);
+    border-color: rgba(74, 222, 128, 0.3);
+}
+
+.social-link img {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.social-link:hover img {
+    opacity: 1;
+    filter: invert(72%) sepia(57%) saturate(445%) hue-rotate(85deg) brightness(95%) contrast(96%);
+}
+
+/* ===== Links Sections ===== */
+.footer-links-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-heading {
+    font-size: 12px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.35);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 0;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer-links li a {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+
+.footer-links li a:hover {
+    color: var(--green-primary);
+}
+
+/* ===== Contact Section ===== */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.contact-icon {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    margin-top: 2px;
+    filter: invert(1);
+    opacity: 0.5;
+}
+
+.contact-item span,
+.contact-item a {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.5;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.contact-item a:hover {
+    color: var(--green-primary);
+}
+
+/* ===== Divider ===== */
+.footer-divider {
+    height: 1px;
+    background: linear-gradient(90deg,
+            transparent 0%,
+            rgba(255, 255, 255, 0.1) 20%,
+            rgba(74, 222, 128, 0.2) 50%,
+            rgba(255, 255, 255, 0.1) 80%,
+            transparent 100%);
+    margin-bottom: 24px;
+}
+
+/* ===== Footer Bottom ===== */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-copyright {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.4);
+    margin: 0;
+}
+
+.footer-credits {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.4);
+    margin: 0;
+}
+
+.footer-credits .heart {
+    display: inline-block;
+    animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+}
+
+/* ===== Responsive Styles ===== */
+@media (max-width: 1024px) {
+    .footer-top {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .footer-brand {
+        grid-column: span 2;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .site-footer {
+        margin-top: 60px;
+    }
+
+    .footer-container {
+        padding: 48px 20px 24px;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .footer-brand {
+        grid-column: span 1;
+        text-align: center;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .footer-tagline {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+
+    .footer-links-section {
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-links li a:hover {
+        transform: none;
+    }
+
+    .footer-contact {
+        align-items: center;
+    }
+
+    .contact-item {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-logo {
+        width: 150px;
+    }
+
+    .footer-tagline {
+        font-size: 13px;
+    }
+
+    .social-link {
+        width: 36px;
+        height: 36px;
+    }
+
+    .social-link img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .footer-copyright,
+    .footer-credits {
+        font-size: 12px;
+    }
+}
+
+/* ===== Account for bottom mobile nav ===== */
+@media (max-width: 768px) {
+    .site-footer {
+        padding-bottom: 100px;
+        /* Space for mobile bottom nav */
+    }
+}
+
+/* ===== Sidebar Layout Compatibility ===== */
+/* When there's a sidebar on the page, offset the footer */
+#side_nav~.site-footer {
+    margin-left: var(--side-w, 260px);
+    width: calc(100% - var(--side-w, 260px));
+}
+
+/* Handle collapsed sidebar state */
+#side_nav.small~.site-footer {
+    margin-left: var(--side-w-small, 72px);
+    width: calc(100% - var(--side-w-small, 72px));
+}

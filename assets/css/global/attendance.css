@@ -1,0 +1,138 @@
+/*
+    Author: Damian Loh Yi Feng
+    Date: 2025-12-20
+    Description: Global CSS for Attendance Management Pages
+*/
+.attendance-wrapper { 
+    display: flex; 
+    gap: 20px; 
+    align-items: flex-start; 
+    margin-bottom: 40px; 
+    flex-wrap: wrap; 
+}
+.code-card { 
+    justify-content: space-between; 
+    margin-top: 20px; 
+    flex: 1; 
+    min-width: 300px; 
+    background: rgba(255, 255, 255, 0.06); 
+    backdrop-filter: blur(10px); 
+    border-radius: 20px; 
+    border: 1px solid rgba(255, 255, 255, 0.15); 
+    padding: 20px; 
+    text-align: center; 
+    min-height: 400px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+}
+.user-avatar { 
+    display: inline-block !important; 
+    width: 45px !important; 
+    height: 45px !important; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    vertical-align: middle; 
+}
+.user-avatar img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+.user-avatar-small { 
+    display: inline-block !important; 
+    width: 35px !important; 
+    height: 35px !important; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    vertical-align: middle; 
+}
+.user-avatar-small img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.timer-circle { 
+    position: relative; 
+    width: 80px; 
+    height: 80px; 
+    margin: 20px auto 0; 
+}
+.timer-svg { 
+    transform: rotate(-90deg); 
+    width: 80px; 
+    height: 80px; 
+}
+.timer-circle-bg { 
+    fill: none; 
+    stroke: rgba(255, 255, 255, 0.1); 
+    stroke-width: 6; 
+}
+.timer-circle-progress { 
+    fill: none; 
+    stroke: #4ade80; 
+    stroke-width: 6; 
+    stroke-dasharray: 201; 
+    stroke-dashoffset: 0; 
+    transition: 1s linear; 
+}
+.timer-text { 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-weight: bold; 
+    color: #fff; 
+}
+#live-session { 
+    display: none; 
+    flex-direction: column; 
+    align-items: center; 
+}
+.code-display { 
+    font-size: 5rem; 
+    font-weight: 800; 
+    font-family: monospace; 
+    color: #4ade80; 
+    letter-spacing: 5px; 
+    text-shadow: 0 0 20px rgba(74, 222, 128, 0.3); 
+}
+.btn-start { 
+    background: #4ade80; 
+    color: #000; 
+    font-weight: bold; 
+    padding: 15px 40px; 
+    border-radius: 50px; 
+    border: none; 
+    cursor: pointer; 
+    transition: 0.3s; 
+}
+
+.custom-search-bar { 
+    display: flex; 
+    align-items: center; 
+    background: rgba(255,255,255,0.1); 
+    border: 1px solid rgba(255,255,255,0.2); 
+    border-radius: 50px; 
+    padding: 8px 15px; 
+    width: 250px; 
+    transition: 0.3s; 
+}
+.custom-search-bar:focus-within { 
+    background: rgba(255,255,255,0.15); 
+    border-color: rgba(255,255,255,0.4); 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+}
+.custom-search-input { 
+    background: transparent; 
+    border: none; 
+    outline: none; 
+    color: #fff; 
+    width: 100%; 
+    font-size: 0.9rem; 
+}
+.custom-search-input::placeholder { 
+    color: rgba(255,255,255,0.5); 
+}

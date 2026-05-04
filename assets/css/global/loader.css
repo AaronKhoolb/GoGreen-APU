@@ -1,0 +1,36 @@
+/*
+    Author: Khoo Lay Bin
+    Date: 2025-11-20
+    Description: loading screen css
+*/
+
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(3px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    z-index: 9999;
+}
+
+#loader.hide {
+    display: none;
+}
+
+#loader .logo {
+    width: auto;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+#loader .loader {
+    width: auto;
+    height: 60px;
+}

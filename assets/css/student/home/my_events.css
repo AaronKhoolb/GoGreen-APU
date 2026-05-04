@@ -1,0 +1,173 @@
+/*
+    Author: Khoo Lay Bin
+    Date: 2026-01-23
+    Description: Style for My Events (Upcoming and Past Event Cards) that included in student home page
+*/
+
+
+.my-events-section {
+    padding: 20px 0px 0px 20px;
+    max-width: 100%;
+}
+
+.my-events-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    margin-right: 15px;
+}
+
+.my-events-title {
+    margin: 0;
+}
+
+.events-count {
+    font-size: 14px;
+}
+
+.my-events-group {
+    margin-bottom: 20px;
+}
+
+.group-title {
+    color: rgba(255, 255, 255, 1);
+    margin: 0 0 16px 0;
+}
+
+.no-events {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.4);
+    margin: 0;
+}
+
+.my-events-empty {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.my-events-empty p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.4);
+    margin: 0 0 16px 0;
+}
+
+.explore-link {
+    display: inline-block;
+    padding: 10px 24px;
+    font-size: 14px;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.explore-link:hover {
+    opacity: 1;
+}
+
+.events-scroll-container {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.my-events-section .event-card {
+    width: 330px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.my-events-section .event-card:last-child {
+    margin-right: 20px;
+}
+
+.my-events-section .card-image {
+    position: relative;
+}
+
+.my-events-section .card-image img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.my-events-section .status-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 12px;
+    border-radius: 100px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.my-events-section .status-badge.pending {
+    background: rgba(255, 193, 7, 0.9);
+    color: #000;
+}
+
+.my-events-section .status-badge.registered {
+    background: rgba(33, 150, 243, 0.9);
+}
+
+.my-events-section .status-badge.attended {
+    background: rgba(76, 175, 80, 0.9);
+}
+
+.my-events-section .status-badge.absent {
+    background: rgba(244, 67, 54, 0.9);
+}
+
+.my-events-section .card-content {
+    padding: 14px;
+}
+
+.my-events-section .card-title {
+    margin: 0 0 10px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.my-events-section .card-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.my-events-section .card-meta img {
+    width: 14px;
+    height: 14px;
+    opacity: 0.5;
+    filter: invert(1);
+}
+
+.my-events-section .card-footer {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+    flex-direction: column;
+}
+
+.my-events-section .view-btn {
+    padding: 13px 0px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    opacity: 0.8;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.my-events-section .view-btn:hover {
+    opacity: 1;
+}

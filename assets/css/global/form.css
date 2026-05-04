@@ -1,0 +1,111 @@
+/*
+    Author: Khoo Lay Bin
+    Date: 2026-1-8
+    Description: Create a global form css for all pages that need a form for edit, create....
+*/
+
+.form-part {
+    width: 100%;
+    background-color: #121212;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    margin-bottom: 25px;
+    padding-top: 0px;
+    overflow: hidden;
+}
+
+
+.form-part-header {
+    background-color: #252525;
+    padding: 18px 25px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.form-part-header span img {
+    height: 25px;
+    width: 30px;
+    filter: invert(1);
+}
+
+.form-part-header h3 {
+    margin: 0px;
+}
+
+
+.form-part-content {
+    width: 100%;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.form-part-content table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.form-part-content table tr td {
+    width: 50%;
+    padding-bottom: 25px;
+}
+
+.form-part-content table tr td:first-child {
+    padding-right: 25px;
+}
+
+
+.form-part-content label:not(.checkbox-switch label),
+.form-part-content>div>label {
+    opacity: 0.7;
+    font-size: 15px;
+}
+
+
+.form-subpart {
+    display: flex;
+    gap: 25px;
+    width: 100%;
+}
+
+.form-subpart-container {
+    width: 100%;
+    background-color: #121212;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    margin-bottom: 25px;
+    padding-top: 0px;
+    overflow: hidden;
+}
+
+
+.form-field {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-field:last-child {
+    margin-bottom: 0px;
+}
+
+
+.form-switch {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.form-switch label {
+    color: var(--green-primary);
+    font-weight: bold;
+}
+
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator,
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+}

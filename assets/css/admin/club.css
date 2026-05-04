@@ -1,0 +1,440 @@
+/*
+    Author: Chong Ray Han
+    Date: 2026-01-30
+    Description: Club Management page styles for Admin panel
+*/
+
+/* ==================== Stats Container ==================== */
+.stats-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.stat-card {
+    flex: 1;
+    min-width: 200px;
+    position: relative;
+    padding: 20px 24px;
+    border-radius: 16px;
+    overflow: hidden;
+    min-height: 110px;
+}
+
+.stat-icon {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.1;
+}
+
+.stat-icon img {
+    width: 32px;
+    height: 32px;
+    filter: invert(75%) sepia(50%) saturate(500%) hue-rotate(80deg) brightness(105%);
+}
+
+.stat-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.stat-label {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+}
+
+.stat-value {
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+}
+
+.stat-subtitle {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 4px;
+}
+
+.stat-breakdown {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 12px;
+    margin-top: 8px;
+}
+
+.stat-breakdown span {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.stat-breakdown .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+/* ==================== Table Actions Container ==================== */
+.table-actions-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 0 20px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: none;
+}
+
+.table-manage-container {
+    width: 100%;
+    box-shadow: none;
+}
+
+/* ==================== Search Bar ==================== */
+.table-search-bar {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    border-radius: 100px;
+    width: 480px;
+    height: 43px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.table-search-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+}
+
+.table-search-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.table-search-btn {
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.table-clear-btn {
+    background: transparent;
+    border: none;
+    align-items: center;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    opacity: 0.5;
+    display: none;
+}
+
+.table-search-bar.has-text .table-clear-btn {
+    display: flex;
+}
+
+.table-clear-btn img,
+.table-search-btn .search-icon {
+    width: 18px;
+    height: 18px;
+    opacity: 0.6;
+}
+
+.create-club-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.create-club-btn:hover {
+    box-shadow: 0 8px 25px rgba(76, 175, 80, 0.3);
+}
+
+.create-club-btn img {
+    width: 22px;
+    height: 22px;
+    filter: brightness(0) invert(1);
+}
+
+/* ==================== Club Logo Styles ==================== */
+.club-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    flex-shrink: 0;
+}
+
+.club-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.club-name-cell {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.club-name-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.club-name-info .name {
+    font-weight: 600;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.club-name-info .email {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* ==================== Club Description ==================== */
+.club-description {
+    max-width: 300px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ==================== Website Link ==================== */
+.club-website-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    background: rgba(76, 175, 80, 0.15);
+    border: 1px solid rgba(76, 175, 80, 0.3);
+    border-radius: 8px;
+    color: #4caf50;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    max-width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.club-website-link:hover {
+    background: rgba(76, 175, 80, 0.25);
+}
+
+.club-website-link img {
+    width: 14px;
+    height: 14px;
+    filter: invert(64%) sepia(50%) saturate(510%) hue-rotate(80deg) brightness(95%);
+    flex-shrink: 0;
+}
+
+.no-website {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 12px;
+    font-style: italic;
+}
+
+/* ==================== Events Count Badge ==================== */
+.events-count-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    height: 32px;
+    padding: 0 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    background: rgba(100, 181, 246, 0.15);
+    color: #64b5f6;
+    border: 1px solid rgba(100, 181, 246, 0.3);
+}
+
+.events-count-badge.zero {
+    background: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ==================== Organizers Badge ==================== */
+.organizers-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    height: 32px;
+    padding: 0 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    background: rgba(171, 71, 188, 0.15);
+    color: #ab47bc;
+    border: 1px solid rgba(171, 71, 188, 0.3);
+}
+
+.organizers-badge.zero {
+    background: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ==================== Table Layout ==================== */
+.table-left-container {
+    width: calc(100% - 160px);
+}
+
+.table-right-container {
+    width: 160px;
+}
+
+.table-right-container th {
+    padding: 10px 0;
+}
+
+.table-left-container tbody tr:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* ==================== Action Buttons ==================== */
+.action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.2s ease;
+    margin: 0 auto;
+}
+
+.action-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.action-btn img {
+    width: 18px;
+    height: 18px;
+    opacity: 0.7;
+}
+
+.action-btn.edit-btn:hover {
+    background: rgba(100, 181, 246, 0.2);
+    border-color: rgba(100, 181, 246, 0.4);
+}
+
+.action-btn.edit-btn:hover img {
+    filter: invert(64%) sepia(50%) saturate(510%) hue-rotate(180deg) brightness(105%);
+}
+
+.action-btn.delete-btn:hover {
+    background: rgba(244, 67, 54, 0.2);
+    border-color: rgba(244, 67, 54, 0.4);
+}
+
+.action-btn.delete-btn:hover img {
+    filter: invert(50%) sepia(50%) saturate(5000%) hue-rotate(330deg) brightness(100%);
+}
+
+/* ==================== Empty State ==================== */
+.empty-state {
+    text-align: center;
+    padding: 60px 40px;
+}
+
+.empty-state img {
+    width: 80px;
+    height: 80px;
+    filter: invert(1);
+    opacity: 0.3;
+    margin-bottom: 20px;
+}
+
+.empty-state h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.empty-state p {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* ==================== Responsive ==================== */
+@media (max-width: 1200px) {
+    .table-search-bar {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .club-description {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .stats-container {
+        padding: 0 16px;
+    }
+
+    .stat-card {
+        min-width: 100%;
+    }
+
+    .table-actions-container {
+        margin: 0 16px;
+        padding: 16px;
+    }
+
+    .table-search-bar {
+        width: 100%;
+    }
+
+    .club-description {
+        display: none;
+    }
+}

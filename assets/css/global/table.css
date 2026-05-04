@@ -1,0 +1,99 @@
+/*
+    Author: Khoo Lay Bin
+    Date: 2025-11-5
+    Description: a global table styles that used throughout the whole website (like manage event, participants, ....)
+*/
+
+
+.table-manage-container {
+    width: 100%;
+    display: flex;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+
+
+.table-left-container {
+    width: calc(100% - 120px);
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+
+
+.table-right-container {
+    width: 120px;
+}
+
+.table-left-container table,
+.table-right-container table {
+    width: 100%;
+    background: transparent;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+
+th {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 25px;
+    text-align: left;
+    height: 40px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+
+
+.table-left-container thead {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px) saturate(180%);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+}
+
+
+
+td {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0px 25px;
+    height: 100px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+
+.table-right-container th,
+.table-right-container td {
+    text-align: center;
+}
+
+.table-right-container table tbody tr td {
+    height: 100px;
+    padding: 0px;
+}
+
+.table-right-container table tbody tr td img {
+    width: 25px;
+    height: 23px;
+    filter: invert(1);
+}
+
+
+
+.table-right-container .trash-btn img {
+    filter: invert(62%) sepia(93%) saturate(1352%) hue-rotate(315deg) brightness(101%) contrast(95%);
+}

@@ -1,0 +1,208 @@
+/*
+    Author: Khoo Lay Bin
+    Date: 2026-1-5
+    Description: My Events Edit Information Page CSS
+*/
+
+.page-content {
+    margin: 24px 70px 20px;
+}
+
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header-actions button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.header-actions button img {
+    width: 18px;
+    height: 18px;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.header-actions button span {
+    opacity: 0.8;
+}
+
+
+.btn-discard {
+    background: linear-gradient(180deg, rgba(239, 68, 68, 0.15), rgba(220, 38, 38, 0.1));
+    backdrop-filter: blur(10px) saturate(180%);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    box-shadow: 0 4px 15px rgba(239, 68, 68, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    color: #f87171;
+}
+
+.btn-discard img {
+    filter: invert(62%) sepia(93%) saturate(1352%) hue-rotate(315deg) brightness(101%) contrast(95%);
+}
+
+.btn-discard:hover {
+    background: linear-gradient(180deg, rgba(239, 68, 68, 0.2), rgba(220, 38, 38, 0.15));
+}
+
+.btn-discard:hover img {
+    opacity: 1;
+}
+
+
+.btn-save {
+    background: linear-gradient(180deg, rgba(34, 197, 94, 0.15), rgba(22, 163, 74, 0.1));
+    backdrop-filter: blur(10px) saturate(180%);
+    border: 1px solid rgba(34, 197, 94, 0.3);
+    box-shadow: 0 4px 15px rgba(34, 197, 94, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    color: #4ade80;
+}
+
+.btn-save img {
+    filter: invert(88%) sepia(48%) saturate(2159%) hue-rotate(66deg) brightness(98%) contrast(89%);
+}
+
+.btn-save:hover {
+    background: linear-gradient(180deg, rgba(34, 197, 94, 0.2), rgba(22, 163, 74, 0.15));
+}
+
+.btn-save:hover img {
+    opacity: 1;
+}
+
+
+.form-field label span {
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+.sdg-1 {
+    color: #E5243B;
+}
+
+.sdg-2 {
+    color: #DDA63A;
+}
+
+.sdg-3 {
+    color: #4C9F38;
+}
+
+.sdg-4 {
+    color: #C5192D;
+}
+
+.sdg-5 {
+    color: #FF3A21;
+}
+
+.sdg-6 {
+    color: #26BDE2;
+}
+
+.sdg-7 {
+    color: #FCC30B;
+}
+
+.sdg-8 {
+    color: #A21942;
+}
+
+.sdg-9 {
+    color: #FD6925;
+}
+
+.sdg-10 {
+    color: #DD1367;
+}
+
+.sdg-11 {
+    color: #FD9D24;
+}
+
+.sdg-12 {
+    color: #BF8B2E;
+}
+
+.sdg-13 {
+    color: #3F7E44;
+}
+
+.sdg-14 {
+    color: #0A97D9;
+}
+
+.sdg-15 {
+    color: #56C02B;
+}
+
+.sdg-16 {
+    color: #00689D;
+}
+
+.sdg-17 {
+    color: #19486A;
+}
+
+
+.txt-container input[type="file"] {
+    margin: 0;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.txt-container input[type="file"]::file-selector-button {
+    padding: 6px 10px;
+    margin-right: 12px;
+    border: none;
+    border-radius: 8px;
+    color: var(--text-primary);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px) saturate(180%);
+}
+
+.txt-container input[type="file"]::file-selector-button:hover {
+    background: linear-gradient(180deg, rgba(34, 197, 94, 0.2), rgba(22, 163, 74, 0.15));
+    box-shadow: 0 2px 8px rgba(34, 197, 94, 0.2);
+}
+
+@media (max-width: 768px) {
+    .page-content {
+        margin: 20px 0px;
+    }
+}
+
+
+.form-subpart-container table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 15px 10px;
+    margin: -10px -15px;
+}
+
+.form-subpart-container table td {
+    width: 50%;
+    padding: 0;
+}
+
+.form-subpart-container table .form-field {
+    margin: 0;
+}
+
+.form-subpart-container table .txt-container {
+    width: 100%;
+}

@@ -1,0 +1,261 @@
+/* 
+    Author: Chong Ray Han 
+    Date: 2026-1-9
+    Description: Stylesheet for admin page
+*/
+
+.section-line {
+    width: 100%;
+    height: 1px;
+    flex: none;
+    background: rgba(255, 255, 255, 0.12);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.general-settings-content {
+    padding: 0 25px;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 1000px;
+}
+
+.setting-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    gap: 40px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+.setting-text {
+    flex: 1;
+    max-width: 400px;
+}
+
+.setting-text h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.setting-text p {
+    margin: 4px 0 0;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.4;
+}
+
+.setting-action {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-preview {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.logo-preview img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.upload-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.upload-btn img {
+    width: 18px;
+    height: 18px;
+    filter: invert(88%) sepia(48%) saturate(2159%) hue-rotate(66deg) brightness(98%) contrast(89%);
+    opacity: 0.8;
+}
+
+.upload-btn span {
+    opacity: 0.8;
+}
+
+.upload-btn:hover {
+    background: linear-gradient(180deg, rgba(34, 197, 94, 0.25), rgba(22, 163, 74, 0.2));
+}
+
+.upload-btn:hover img,
+.upload-btn:hover span {
+    opacity: 1;
+}
+
+.reset-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.reset-btn img {
+    width: 18px;
+    height: 18px;
+    filter: invert(62%) sepia(93%) saturate(1352%) hue-rotate(315deg) brightness(101%) contrast(95%);
+    opacity: 0.8;
+}
+
+.reset-btn span {
+    opacity: 0.8;
+}
+
+.reset-btn:hover {
+    background: linear-gradient(180deg, rgba(239, 68, 68, 0.25), rgba(220, 38, 38, 0.2));
+}
+
+.reset-btn:hover img,
+.reset-btn:hover span {
+    opacity: 1;
+}
+
+/* Preview Card Styles */
+.preview-card {
+    padding: 25px;
+    border-radius: 16px;
+    margin-top: 20px;
+}
+
+.preview-card h3 {
+    margin: 0 0 16px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.preview-label {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 500;
+    display: block;
+    margin-bottom: 12px;
+}
+
+/* Nav Bar Preview */
+.nav-preview-container {
+    margin-bottom: 30px;
+}
+
+.nav-preview {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.nav-preview-logo img {
+    height: 36px;
+    width: auto;
+    object-fit: contain;
+}
+
+.nav-preview-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-preview-main {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 6px;
+    border-radius: 50px;
+}
+
+.nav-preview-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    border-radius: 50px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.2s ease;
+}
+
+.nav-preview-btn img {
+    width: 16px;
+    height: 16px;
+    opacity: 0.7;
+    filter: invert(1);
+}
+
+.nav-preview-btn.active {
+    background: rgba(34, 197, 94, 0.15);
+    color: #22c55e;
+}
+
+.nav-preview-btn.active img {
+    opacity: 1;
+    filter: invert(62%) sepia(76%) saturate(393%) hue-rotate(93deg) brightness(95%) contrast(91%);
+}
+
+.nav-preview-account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.nav-preview-account img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.7;
+    filter: invert(1);
+}
+
+/* Icon Preview Section */
+.icon-preview-section {
+    margin-top: 20px;
+}
+
+.icon-preview-box {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.icon-preview-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
