@@ -2,7 +2,7 @@
 
 > A campus sustainability platform for **Asia Pacific University of Technology & Innovation (APU)** — built to make eco-friendly events discoverable, attendance trackable, and green participation rewarding.
 
-GoGreen@APU connects students with environmental initiatives on campus through a gamified event system. Students earn **AP Coins** by attending events and engaging with the community, then redeem them for rewards. Every event is mapped to one or more of the **17 UN Sustainable Development Goals (SDGs)** so participants can see exactly which sustainability outcomes their activities contribute to.
+GoGreen@APU connects students with environmental initiatives on campus through a gamified event system. Students earn **AP Coins** by attending events and engaging with the community, then redeem them for rewards. Every event is mapped to one or more of the **17 UN Sustainable Development Goals (SDGs)** so participants can see exactly which sustainability outcomes their activities contribute to. 
 
 ---
 
